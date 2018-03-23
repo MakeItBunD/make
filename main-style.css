@@ -23,11 +23,6 @@ body {
     width: 100%;
     height: 100%;
 }
-.content h1 {
-    margin: 0 20px 10px auto;
-    font-weight: 100;
-    font-size: 70px;
-}
 .content a {
     margin: 0 0 30px 25px;
     text-decoration: none;
@@ -43,4 +38,39 @@ body {
 }
 .content a:hover {
     border-bottom: 35px solid #797979;
+}
+svg{
+    min-width: 300px;
+    min-height: 100px;
+    margin: 0 30px 20px auto;
+}
+text {
+    filter: url(#filter);
+    fill: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 165px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media (max-width: 1024px) {
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: space-between;
+    }
+    svg {
+        margin: 70px auto 10px auto ;
+    }
+    .content a {
+        font-size: 40px;
+        margin: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .content a {
+        font-size: 35px;
+        margin: 20px;
+    }
 }

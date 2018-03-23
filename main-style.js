@@ -11,6 +11,3 @@ function getDate() {
 }
 setInterval(getDate, 0);
 
-$(window).ready(function(){
-setTimeout ("$('#block1').show('drop');",2000);
-});
